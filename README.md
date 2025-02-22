@@ -46,7 +46,7 @@ Contribuições são sempre bem-vindas! Se você tiver alguma sugestão ou encon
 
 Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença GPL.
 
 Autor
 
