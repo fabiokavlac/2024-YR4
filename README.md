@@ -53,5 +53,3 @@ Autor
 Fabio Kavlac 
 
 fabiokavlac@gmail.com
-
-seu.email@exemplo.com
