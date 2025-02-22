@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contagem Regressiva</title>
+<style>
+  #relogio {
+    font-size: 48px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Contagem Regressiva para 22 de Dezembro de 2032</h1>
+<div id="relogio"></div>
+
+<h2>Asteroide 2024 YR4</h2>
+<p>
+  O asteroide 2024 YR4 é um asteroide recém-descoberto que está em uma órbita próxima da Terra.
+  Foi descoberto em 2024 e tem um tamanho estimado de cerca de 100 metros de diâmetro.
+  Não há risco de colisão com a Terra nos próximos 100 anos.
+  A NASA está monitorando o asteroide de perto para obter mais informações sobre sua órbita e características.
+</p>
+
+<h2>Apollo 11</h2>
+<p>
+  A Apollo 11 foi a primeira missão espacial tripulada a pousar na Lua.
+  Em 20 de julho de 1969, os astronautas Neil Armstrong e Buzz Aldrin caminharam na superfície lunar.
+  A missão Apollo 11 foi um marco na história da exploração espacial e um símbolo do espírito de aventura da humanidade.
+  Você pode encontrar mais informações sobre a Apollo 11 no site <a href="https://www.apolo11.com/">Apollo 11</a>.
+</p>
+
+<h2>Rastreamento</h2>
+<p>
+  O rastreamento de asteroides e outros objetos espaciais é feito por diversas organizações, incluindo:
+  <ul>
+    <li><a href="https://www.nasa.gov/">NASA</a></li>
+    <li><a href="https://www.esa.int/">ESA</a></li>
+    <li><a href="https://www.un.org/space/">Nações Unidas</a></li>
+    <li>Diversas universidades e centros de pesquisa ao redor do mundo</li>
+  </ul>
+  Essas organizações utilizam telescópios terrestres e espaciais para monitorar os objetos espaciais e prever possíveis riscos de colisão com a Terra.
+</p>
+
+<script>
+  // Função para atualizar o relógio regressivo
+  function atualizarRelogio() {
+    const dataAlvo = new Date('2032-12-22T00:00:00');
+    const dataAtual = new Date();
+    const diferenca = dataAlvo.getTime() - dataAtual.getTime();
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+    document.getElementById('relogio').innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  }
+
+  // Atualizar o relógio a cada segundo
+  setInterval(atualizarRelogio, 1000);
+
+  // Chamar a função pela primeira vez para exibir o relógio imediatamente
+  atualizarRelogio();
+</script>
+
+</body>
+</html>
